@@ -52,6 +52,8 @@ import {
   DOCUMENT_FRAGMENT_NODE,
 } from '../shared/HTMLNodeType';
 import {ROOT_ATTRIBUTE_NAME} from '../shared/DOMProperty';
+import * as isCustomComponent from '../shared/isCustomComponent';
+import * as DOMnamespaces from '../shared/DOMNamespaces';
 const {
   createElement,
   createTextNode,
@@ -1296,6 +1298,10 @@ const ReactDOM: Object = {
     ReactControlledComponent,
     ReactDOMComponentTree,
     ReactDOMEventListener,
+  },
+  shared: {
+    isCustomComponent,
+    DOMnamespaces,
   },
 };
 
